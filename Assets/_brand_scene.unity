@@ -2607,6 +2607,14 @@ Prefab:
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11468896, guid: b1eaf19d4dc15ff46a73046238454fac, type: 2}
+      propertyPath: pickup_promt
+      value: 
+      objectReference: {fileID: 953319445}
+    - target: {fileID: 11468896, guid: b1eaf19d4dc15ff46a73046238454fac, type: 2}
+      propertyPath: drop_promt
+      value: 
+      objectReference: {fileID: 1375129092}
     m_RemovedComponents:
     - {fileID: 8219322, guid: b1eaf19d4dc15ff46a73046238454fac, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: b1eaf19d4dc15ff46a73046238454fac, type: 2}
@@ -2657,7 +2665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

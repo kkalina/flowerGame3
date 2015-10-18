@@ -26,8 +26,8 @@ public class Driver : MonoBehaviour {
     public AudioSource itsComingForUs;
     public AudioSource CoD;
 
-    public GUIText pickup_promt;
-    public GUIText drop_promt;
+    public Canvas pickup_promt;
+    public Canvas drop_promt;
 
     public bool playAudio = true;
     private bool pickADaisy = false;
