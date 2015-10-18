@@ -2263,34 +2263,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 16
       objectReference: {fileID: 0}
-    - target: {fileID: 151502, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 106698, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 177994, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 113764, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 127378, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11462128, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 11442966, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
-      propertyPath: hand
-      value: 
-      objectReference: {fileID: 1802186229}
     - target: {fileID: 11442966, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
       propertyPath: plant
       value: 
@@ -2753,10 +2725,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d87651423700e44c28232f32ec099258, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1802186229 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 127378, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
-  m_PrefabInternal: {fileID: 1559838119}
 --- !u!1001 &1845684897
 Prefab:
   m_ObjectHideFlags: 0

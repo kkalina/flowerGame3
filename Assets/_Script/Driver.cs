@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class Driver : MonoBehaviour {
+    public bool gameOver = false;
     public float duration = 8;
     public double multiplier = 1;
     public GameObject sphere;
@@ -36,6 +37,11 @@ public class Driver : MonoBehaviour {
     private float t = 0;
     public bool tRexDead = false;
 
+    //load level after one sceond delay
+    IEnumerator LevelLoad(string name) {
+        yield return new WaitForSeconds(3f);
+        Application.LoadLevel(name);
+    }
 
     IEnumerator distraction(int i) {
         //yield return new WaitForSeconds(50f);
@@ -49,8 +55,7 @@ public class Driver : MonoBehaviour {
             grabDriver.plant.transform.FindChild("GodRays").gameObject.SetActive(true);
             yield return new WaitForSeconds(5f);
         }
-        if (i == 1)
-        {
+        if (i == 1) {
             yield return new WaitForSeconds(1f);
             gj.Play();
             yield return new WaitForSeconds(8f);
@@ -61,8 +66,7 @@ public class Driver : MonoBehaviour {
             grabDriver.plant.transform.FindChild("GodRays").gameObject.SetActive(true);
         }
 
-        else if (i == 2)
-        {
+        else if (i == 2) {
             yield return new WaitForSeconds(1f);
             flowerPerson.Play();
             yield return new WaitForSeconds(12f);
@@ -74,8 +78,7 @@ public class Driver : MonoBehaviour {
 
             grabDriver.plant.transform.FindChild("GodRays").gameObject.SetActive(true);
         }
-        else if (i == 3)
-        {
+        else if (i == 3) {
             yield return new WaitForSeconds(8f);
             poppies.Play();
             yield return new WaitForSeconds(12f);
@@ -91,7 +94,7 @@ public class Driver : MonoBehaviour {
             yield return new WaitForSeconds(8f);
             playerMusicObj.GetComponent<AudioSource>().Stop();
             tRex.SetActive(true);
-            fightTrex = true; 
+            fightTrex = true;
             yield return new WaitForSeconds(3f);
             shootTrex.Play();
             player.GetComponent<interactMode>().safety = false;
@@ -127,54 +130,46 @@ public class Driver : MonoBehaviour {
 
     // Use this for initialization
     void Update() {
-        if (pickADaisy)
-        {
-            if (playAudio)
-            {
+        if (pickADaisy) {
+            if (playAudio) {
                 StartCoroutine(distraction(0));
                 playAudio = false;
             }
-            if (grabDriver.dropped)
-            {
+            if (grabDriver.dropped) {
                 //gj.Play();
                 pickADaisy = false;
                 playAudio = true;
                 waterPlants = true; StartCoroutine(distraction(1));
             }
-            
+
         }
 
         //CHANGE THE THING WE CAN PICK UP
         else if (waterPlants) {
             //grabDriver.plant = GameObject.Find("_water_2");
             //grabDriver.plant.GetComponent<Light>().enabled = true;
-            if (playAudio)
-            {
+            if (playAudio) {
                 //water.Play();
                 playAudio = false;
             }
-            if (grabDriver.dropped)
-            {
+            if (grabDriver.dropped) {
                 waterPlants = false;
                 playAudio = true;
                 grabDriver.dropped = false;
                 //flowerPerson.Play();
                 sunPlants = true; StartCoroutine(distraction(2));
             }
-           
+
         }
-        else if (sunPlants)
-        {
+        else if (sunPlants) {
             //grabDriver.plant = GameObject.Find("_move_3");
             //grabDriver.plant.GetComponent<Light>().enabled = true;
-            if (playAudio)
-            {
+            if (playAudio) {
                 //move.Play();
                 playAudio = false;
                 //notHard.Play();
             }
-            if (grabDriver.dropped)
-            {
+            if (grabDriver.dropped) {
                 sunPlants = false;
                 playAudio = true;
                 grabDriver.dropped = false;
@@ -182,17 +177,14 @@ public class Driver : MonoBehaviour {
 
             }
         }
-        else if (smellRoses)
-        {
+        else if (smellRoses) {
             //grabDriver.plant = GameObject.Find("_smell_4");
             //grabDriver.plant.GetComponent<Light>().enabled = true;
-            if (playAudio)
-            {
+            if (playAudio) {
                 //smell.Play();
                 playAudio = false;
             }
-            if (grabDriver.dropped)
-            {
+            if (grabDriver.dropped) {
                 sunPlants = false;
                 playAudio = true;
                 grabDriver.dropped = false;
@@ -201,14 +193,17 @@ public class Driver : MonoBehaviour {
                 StartCoroutine(distraction(4));
             }
         }
-        else if (fightTrex)
-        {
-            if (tRexDead)
-            {
+        else if (fightTrex) {
+            if (tRexDead) {
                 CoD.Play();
                 player.GetComponent<interactMode>().interactionMode = interactMode.modes.admire;
                 //next scene
             }
         }
-    }	
+
+        if (gameOver) {
+                player.GetComponent<SpriteRenderer>().enabled = true;
+                StartCoroutine(LevelLoad("Beautiful Intro"));
+        }
+    } 
 }
