@@ -25,7 +25,8 @@ public class Intro : MonoBehaviour {
 
 
 	}
-	
-	// Update is called once per frame
-
+	void Update() {
+		if (Input.GetButtonDown("Submit"))
+		    Application.LoadLevel ("karl_scene_2");
+	}
 }
