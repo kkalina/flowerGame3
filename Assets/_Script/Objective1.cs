@@ -12,6 +12,8 @@ public class Objective1 : MonoBehaviour {
 
     public Canvas pickup_promt;
     public Canvas drop_promt;
+
+    public GameObject leftClickPrompt;
     // Use this for initialization
     void Start () 
 	{
@@ -32,6 +34,7 @@ public class Objective1 : MonoBehaviour {
         else if (other.gameObject == plant && grabbing) {
             pickup_promt.enabled = false;
             drop_promt.enabled = true;
+            leftClickPrompt.GetComponent<SpriteRenderer>().enabled = true;
         }
     }
 
@@ -66,6 +69,8 @@ public class Objective1 : MonoBehaviour {
         else {
             drop_promt.enabled = false;
             pickup_promt.enabled = false;
+
+            leftClickPrompt.GetComponent<SpriteRenderer>().enabled = false;
         }
         if (grabbing && plant != null) {
             plant.transform.position = Sphere_of_influence.transform.position; //+ new Vector3(-.34f, .26f, 0);
