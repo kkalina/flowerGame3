@@ -712,7 +712,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 34ecda220026d4d4c85e1c155f1e6140, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1643,14 +1643,15 @@ MonoBehaviour:
   flowerPerson: {fileID: 8202868}
   notHard: {fileID: 8202270}
   shootTrex: {fileID: 8202270}
-  audMoveRock: {fileID: 8237402}
-  notZen: {fileID: 8273220}
-  moreSpeed: {fileID: 8234194}
-  audPickAnotherDaisy: {fileID: 8207570}
+  audMoveRock: {fileID: 0}
+  notZen: {fileID: 0}
+  moreSpeed: {fileID: 0}
+  audPickAnotherDaisy: {fileID: 0}
   itsComingForUs: {fileID: 0}
   CoD: {fileID: 0}
   playAudio: 1
   tRexDead: 0
+  iPrompt: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

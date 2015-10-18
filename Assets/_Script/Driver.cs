@@ -113,14 +113,20 @@ public class Driver : MonoBehaviour {
             yield return new WaitForSeconds(10f);
             audMoveRock.Play();
             //ACTIVATE ROCK PICKUP HERE LOL
+            grabDriver.plant = GameObject.Find("_Stone_1");
+            grabDriver.plant.GetComponent<Light>().enabled = true;
+            grabDriver.plant.transform.FindChild("GodRays").gameObject.SetActive(true);
             yield return new WaitForSeconds(10f);
-            notZen.Play();
-            yield return new WaitForSeconds(5f);
+            
         }
         else if (i == 6) {
+            notZen.Play();
             yield return new WaitForSeconds(5f);
             moreSpeed.Play();
             //ACTIVATE NEW FLOWER
+            grabDriver.plant = GameObject.Find("_daisy_2");
+            grabDriver.plant.GetComponent<Light>().enabled = true;
+            grabDriver.plant.transform.FindChild("GodRays").gameObject.SetActive(true);
             yield return new WaitForSeconds(5f);
         }
         //yield return new WaitForSeconds(5f);
@@ -233,13 +239,14 @@ public class Driver : MonoBehaviour {
                 CoD.Play();
                 player.GetComponent<interactMode>().interactionMode = interactMode.modes.admire;
                 //next scene
+                fightTrex = false;
+                moveRock = true;
             }
         }
         else if (moveRock)
         {
             if (grabDriver.dropped)
             {
-                fightTrex = false;
                 playAudio = true;
                 grabDriver.dropped = false;
                 moveRock = false;
