@@ -24,6 +24,7 @@ Quaternion.LookRotation(target.transform.position - this.transform.position), ro
         if(health <= 0)
         {
             GameObject deathSplosionInst = Instantiate(deathSplosion);
+            deathSplosionInst.transform.position = this.transform.position;
             Destroy(this.gameObject);
         }
     }
