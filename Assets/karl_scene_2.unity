@@ -2021,6 +2021,14 @@ Prefab:
       propertyPath: tRex
       value: 
       objectReference: {fileID: 2082933537}
+    - target: {fileID: 2075060, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
+      propertyPath: m_HDR
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2075060, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
+      propertyPath: m_OcclusionCulling
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
   m_IsPrefabParent: 0
