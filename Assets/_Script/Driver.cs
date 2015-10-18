@@ -5,6 +5,9 @@ public class Driver : MonoBehaviour {
     public float duration = 8;
     public double multiplier = 1;
     public GameObject sphere;
+    public GameObject tRex;
+    public GameObject player;
+    public GameObject playerMusicObj;
     public Objective1 grabDriver;
     public AudioSource welcome;
     public AudioSource daisy;
@@ -19,6 +22,8 @@ public class Driver : MonoBehaviour {
     public AudioSource flowerPerson;
     public AudioSource notHard;
     public AudioSource shootTrex;
+    public AudioSource itsComingForUs;
+    public AudioSource CoD;
     public bool playAudio = true;
     private bool pickADaisy = false;
     private bool waterPlants = false;
@@ -74,7 +79,14 @@ public class Driver : MonoBehaviour {
             yield return new WaitForSeconds(10f);
             squirrels.Play();
             yield return new WaitForSeconds(8f);
+            playerMusicObj.GetComponent<AudioSource>().Stop();
+            tRex.SetActive(true);
+            fightTrex = true; 
+            yield return new WaitForSeconds(3f);
             shootTrex.Play();
+            player.GetComponent<interactMode>().safety = false;
+            yield return new WaitForSeconds(10f);
+            itsComingForUs.Play();
 
         }
         //yield return new WaitForSeconds(5f);
@@ -174,7 +186,16 @@ public class Driver : MonoBehaviour {
                 sunPlants = false;
                 playAudio = true;
                 grabDriver.dropped = false;
-                fightTrex = true; StartCoroutine(distraction(4));
+                //fightTrex = true; 
+                StartCoroutine(distraction(4));
+            }
+        }
+        else if (fightTrex)
+        {
+            if (tRex == null)
+            {
+                CoD.Play();
+                //next scene
             }
         }
     }	

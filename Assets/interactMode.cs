@@ -18,6 +18,8 @@ public class interactMode : MonoBehaviour {
     public float armDelay = 3f;
     public bool arming = false;
 
+    public bool safety = true;
+
     // Use this for initialization
     void Start () {
 
@@ -29,13 +31,13 @@ public class interactMode : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.I))
+        if (Input.GetKeyDown(KeyCode.I) && !safety)
         {
             if (interactionMode == modes.admire)
                 interactionMode = modes.annihilate;
             else
                 interactionMode = modes.admire;
-
+            safety = true;
         }
 
 	    if((interactionMode == modes.annihilate) && (currentMode == modes.admire))
