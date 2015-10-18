@@ -11,6 +11,8 @@ public class interactMode : MonoBehaviour {
     public GameObject gunObj3;
     public GameObject gunObj4;
 
+    public GameObject iPrompt;
+
     public GameObject handObj1;
     public GameObject handObj2;
 
@@ -31,7 +33,7 @@ public class interactMode : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.I) && !safety)
+        if (Input.GetKeyDown(KeyCode.T) && !safety)
         {
             if (interactionMode == modes.admire)
                 interactionMode = modes.annihilate;
@@ -43,6 +45,8 @@ public class interactMode : MonoBehaviour {
 	    if((interactionMode == modes.annihilate) && (currentMode == modes.admire))
         {
             currentMode = modes.annihilate;
+
+            iPrompt.SetActive(false);
             armTime = Time.time;
             gunObj1.SetActive(true);
             handObj1.SetActive(false);

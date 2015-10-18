@@ -35,6 +35,7 @@ public class Driver : MonoBehaviour {
     private bool fightTrex = false;
     private float t = 0;
     public bool tRexDead = false;
+    public GameObject iPrompt;
 
 
     IEnumerator distraction(int i) {
@@ -93,6 +94,7 @@ public class Driver : MonoBehaviour {
             tRex.SetActive(true);
             fightTrex = true; 
             yield return new WaitForSeconds(3f);
+            iPrompt.SetActive(true);
             shootTrex.Play();
             player.GetComponent<interactMode>().safety = false;
             yield return new WaitForSeconds(10f);
