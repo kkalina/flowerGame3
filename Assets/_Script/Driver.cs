@@ -28,6 +28,7 @@ public class Driver : MonoBehaviour {
 
 
     void Start() {
+        grabDriver.plant = GameObject.Find("_daisy_1");
         grabDriver = sphere.GetComponent<Objective1>();
         grabDriver.plant.GetComponent<Light>().enabled = true;
     }
