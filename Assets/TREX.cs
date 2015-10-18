@@ -33,9 +33,9 @@ Quaternion.LookRotation(target.transform.position - this.transform.position), ro
     /*
     void onCollisionEnter(Collision coll)
     {
-        if (coll.gameObject.tag == "bullet")
+        if (coll.gameObject.name == "Hut")
         {
-            health = health - 1;
+            coll.gameObject.GetComponent<demolish>().enabled = true;
         }
     }
     */

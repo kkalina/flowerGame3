@@ -8,6 +8,8 @@ TagManager:
   - rex
   - enviro
   - bullet
+  - Fire
+  - jaw
   layers:
   - Default
   - TransparentFX
