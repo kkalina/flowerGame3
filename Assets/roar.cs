@@ -10,12 +10,13 @@ public class roar : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
-	}
+
+        this.gameObject.GetComponent<AudioSource>().Play();
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) || (Random.Range(1,300)==34))
         {
             timeOfRoar = Time.time;
             roaring = true;

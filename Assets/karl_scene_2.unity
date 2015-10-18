@@ -266,7 +266,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -989,7 +989,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -1124,6 +1124,10 @@ Prefab:
     - target: {fileID: 100014, guid: c91c1eb85782d5748ace27eb4d7415bb, type: 3}
       propertyPath: m_TagString
       value: enviro
+      objectReference: {fileID: 0}
+    - target: {fileID: 5400000, guid: c91c1eb85782d5748ace27eb4d7415bb, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c91c1eb85782d5748ace27eb4d7415bb, type: 3}
@@ -1681,7 +1685,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -2311,7 +2315,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -2410,7 +2414,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -2436,7 +2440,7 @@ GameObject:
   - 23: {fileID: 207996427}
   m_Layer: 0
   m_Name: Ground
-  m_TagString: rex
+  m_TagString: enviro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3479,7 +3483,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -4315,7 +4319,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -5565,7 +5569,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -5874,7 +5878,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -5986,7 +5990,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -6208,7 +6212,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -6274,7 +6278,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -9762,7 +9766,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -9870,7 +9874,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -9970,7 +9974,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -10028,7 +10032,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -10086,7 +10090,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -10502,7 +10506,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -10690,7 +10694,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -11942,7 +11946,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -12062,7 +12066,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -12384,7 +12388,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -12618,7 +12622,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -13467,7 +13471,7 @@ GameObject:
   - 4: {fileID: 1389986308}
   m_Layer: 0
   m_Name: stone_lantern 4
-  m_TagString: Untagged
+  m_TagString: enviro
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14091,7 +14095,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -14713,7 +14717,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -14964,7 +14968,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -15302,7 +15306,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -15959,7 +15963,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -16202,7 +16206,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -16402,7 +16406,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -18704,7 +18708,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -19374,7 +19378,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -19436,7 +19440,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -19670,7 +19674,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -19728,7 +19732,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled
@@ -19844,7 +19848,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_TagString
-      value: rex
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 2300000, guid: d87651423700e44c28232f32ec099258, type: 2}
       propertyPath: m_Enabled

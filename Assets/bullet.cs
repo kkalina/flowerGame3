@@ -23,7 +23,8 @@ public class bullet : MonoBehaviour {
             GameObject hit = Instantiate(hitExplosion);
             hit.transform.position = this.transform.position;
             hit.transform.rotation = this.transform.rotation;
-            tRex.GetComponent<TREX>().health = tRex.GetComponent<TREX>().health - 1;
+            if (coll.gameObject.tag == "rex")
+                tRex.GetComponent<TREX>().health = tRex.GetComponent<TREX>().health - 1;
             Destroy(this.gameObject);
         }
     }
