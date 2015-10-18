@@ -5,6 +5,7 @@ public class TREX : MonoBehaviour {
     public float speed = 2f;
     public float rotationSpeed = 1f;
     public GameObject target;
+    public int health = 1000;
 	// Use this for initialization
 	void Start () {
 	
@@ -19,4 +20,13 @@ Quaternion.LookRotation(target.transform.position - this.transform.position), ro
         Vector3 movement = new Vector3(this.transform.forward.x, 0f, this.transform.forward.z);
         this.transform.position += movement * speed * Time.deltaTime;
     }
+    /*
+    void onCollisionEnter(Collision coll)
+    {
+        if (coll.gameObject.tag == "bullet")
+        {
+            health = health - 1;
+        }
+    }
+    */
 }

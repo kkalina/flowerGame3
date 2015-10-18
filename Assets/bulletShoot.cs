@@ -6,6 +6,7 @@ public class bulletShoot : MonoBehaviour
 
     public GameObject bullet;
     public GameObject bulletSoundObj;
+    public GameObject tRex;
 
     public float frequency = 1f;
     private float lastOccruance = 0f;
@@ -22,6 +23,7 @@ public class bulletShoot : MonoBehaviour
             if (Time.time > lastOccruance + frequency)
             {
                 GameObject bulletInstance = Instantiate(bullet);
+                bulletInstance.GetComponent<bullet>().tRex = tRex;
                 bulletInstance.transform.position = this.transform.position;
                 bulletInstance.transform.rotation = this.transform.rotation;
                 GameObject bulletSoundInstance = Instantiate(bulletSoundObj);
