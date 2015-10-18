@@ -10,7 +10,7 @@ Material:
   m_Shader: {fileID: 14000, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: EFFECT_BUMP EFFECT_HUE_VARIATION GEOM_TYPE_BRANCH
   m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -54,6 +54,166 @@ Material:
           name: _Cull
         second: 2
     m_Colors:
+      data:
+        first:
+          name: _TreeInfo0
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _TreeInfo1
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _TreeInfo2
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _TreeInfo3
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _TreeSize0
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _TreeSize1
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _TreeSize2
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _TreeSize3
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords0
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords1
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords2
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords3
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords4
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords5
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords6
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords7
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords8
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords9
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords10
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords11
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords12
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords13
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords14
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords15
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords16
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords17
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords18
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords19
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords20
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords21
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords22
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords23
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords24
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords25
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords26
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords27
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords28
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords29
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords30
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _ImageTexCoords31
+        second: {r: 0, g: 0, b: 0, a: 0}
       data:
         first:
           name: _Color
