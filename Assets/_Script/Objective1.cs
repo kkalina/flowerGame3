@@ -9,9 +9,11 @@ public class Objective1 : MonoBehaviour {
     public GameObject hand;
     public bool grabbing = false;
     public bool dropped = false;
-	
-	// Use this for initialization
-	void Start () 
+
+    public Canvas pickup_promt;
+    public Canvas drop_promt;
+    // Use this for initialization
+    void Start () 
 	{
         //hand = transform.Find("the hand art").gameObject;
 	}
@@ -23,6 +25,16 @@ public class Objective1 : MonoBehaviour {
 			
 		}
 	}
+    void OnTriggerStay(Collider other) {
+        if (other.gameObject == plant && !grabbing) {
+            pickup_promt.enabled = true;
+        }
+        else if (other.gameObject == plant && grabbing) {
+            pickup_promt.enabled = false;
+            drop_promt.enabled = true;
+        }
+    }
+
 	void OnTriggerExit(Collider other)
 	{
 		if (other.gameObject == plant) //Current Target
@@ -50,6 +62,10 @@ public class Objective1 : MonoBehaviour {
                 dropped = true;
                 grabable = false;
             }
+        }
+        else {
+            drop_promt.enabled = false;
+            pickup_promt.enabled = false;
         }
         if (grabbing && plant != null) {
             plant.transform.position = Sphere_of_influence.transform.position; //+ new Vector3(-.34f, .26f, 0);
