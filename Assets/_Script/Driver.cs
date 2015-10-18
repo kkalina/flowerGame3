@@ -2,7 +2,8 @@
 using System.Collections;
 
 public class Driver : MonoBehaviour {
-    public float duration = 10;
+    public float duration = 8;
+    public double multiplier = 1;
     public GameObject sphere;
     public Objective1 grabDriver;
     public AudioSource welcome;
@@ -18,7 +19,7 @@ public class Driver : MonoBehaviour {
     public AudioSource flowerPerson;
     public AudioSource notHard;
     public bool playAudio = true;
-    private bool pickADaisy = true;
+    private bool pickADaisy = false;
     private bool waterPlants = false;
     private bool sunPlants = false;
     private bool smellRoses = false;
@@ -27,10 +28,37 @@ public class Driver : MonoBehaviour {
     private float t = 0;
 
 
+
+    bool distraction(double i) {
+        while (t < duration) {
+            t += Time.deltaTime;
+        }
+        if (i == 1)
+            dandolions.Play();
+        else if (i == 2)
+            tyPlants.Play();
+        else if (i == 3)
+            poppies.Play();
+        else if (i == 4)
+            squirrels.Play();
+        else
+            multiplier = i;
+        t = 0;
+        while (t < duration) {
+            t += Time.deltaTime;
+        }
+        multiplier = 1;
+        return true;
+    }
+
     void Start() {
         grabDriver.plant = GameObject.Find("_daisy_1");
         grabDriver = sphere.GetComponent<Objective1>();
         grabDriver.plant.GetComponent<Light>().enabled = true;
+        welcome.Play();
+        pickADaisy = distraction(.5);
+        playAudio = pickADaisy;
+
     }
     //Pick a daisy
     //Water the flower (pick it up lol)
@@ -46,31 +74,8 @@ public class Driver : MonoBehaviour {
     //You dummy
     //Pick another daisy
 
-
-    void distraction(int i){
-        if (i == 1)
-            dandolions.Play();
-        else if (i == 2)
-            tyPlants.Play();
-        else if (i == 3)
-            poppies.Play();
-        else
-            squirrels.Play();
-        t = 0;
-        while (t < duration) {
-            t += Time.deltaTime;
-        }
-
-        return;
-    }
-
     // Use this for initialization
     void Update() {
-        if (playAudio) {
-            welcome.Play();
-            playAudio = false;
-        }
-
         if (pickADaisy)
         {
             if (playAudio)
@@ -83,9 +88,9 @@ public class Driver : MonoBehaviour {
                 gj.Play();
                 pickADaisy = false;
                 playAudio = true;
-                waterPlants = true;
+                waterPlants = distraction(1);
             }
-            distraction(1);
+            
         }
 
         //CHANGE THE THING WE CAN PICK UP
@@ -101,14 +106,11 @@ public class Driver : MonoBehaviour {
             {
                 waterPlants = false;
                 playAudio = true;
-                sunPlants = true;
                 grabDriver.dropped = false;
                 flowerPerson.Play();
+                sunPlants = distraction(2);
             }
-            t = 0;
-            while (t < duration * .6)
-                t += Time.deltaTime;
-            distraction(2);
+           
         }
         else if (sunPlants)
         {
@@ -124,11 +126,10 @@ public class Driver : MonoBehaviour {
             {
                 sunPlants = false;
                 playAudio = true;
-                smellRoses = true;
                 grabDriver.dropped = false;
+                smellRoses = distraction(3);
 
             }
-            distraction(3);
         }
         else if (smellRoses)
         {
@@ -143,10 +144,9 @@ public class Driver : MonoBehaviour {
             {
                 sunPlants = false;
                 playAudio = true;
-                fightTrex = true;
                 grabDriver.dropped = false;
+                fightTrex = distraction(4);
             }
-            distraction(4);
         }
     }	
 }
