@@ -22,6 +22,10 @@ public class Driver : MonoBehaviour {
     public AudioSource flowerPerson;
     public AudioSource notHard;
     public AudioSource shootTrex;
+    public AudioSource audMoveRock;
+    public AudioSource notZen;
+    public AudioSource moreSpeed;
+    public AudioSource audPickAnotherDaisy;
 
     public AudioSource itsComingForUs;
     public AudioSource CoD;
@@ -35,7 +39,12 @@ public class Driver : MonoBehaviour {
     private bool fightTrex = false;
     private float t = 0;
     public bool tRexDead = false;
+<<<<<<< HEAD
     public GameObject iPrompt;
+=======
+    private bool moveRock = false;
+    private bool pickAnotherDaisy = false;
+>>>>>>> origin/master
 
 
     IEnumerator distraction(int i) {
@@ -86,13 +95,14 @@ public class Driver : MonoBehaviour {
 
             grabDriver.plant.transform.FindChild("GodRays").gameObject.SetActive(true);
         }
-        else if (i == 4) {
+        else if (i == 4)
+        {
             yield return new WaitForSeconds(10f);
             squirrels.Play();
             yield return new WaitForSeconds(8f);
             playerMusicObj.GetComponent<AudioSource>().Stop();
             tRex.SetActive(true);
-            fightTrex = true; 
+            fightTrex = true;
             yield return new WaitForSeconds(3f);
             iPrompt.SetActive(true);
             shootTrex.Play();
@@ -100,6 +110,21 @@ public class Driver : MonoBehaviour {
             yield return new WaitForSeconds(10f);
             itsComingForUs.Play();
 
+        }
+        else if (i == 5)
+        {
+            yield return new WaitForSeconds(10f);
+            audMoveRock.Play();
+            //ACTIVATE ROCK PICKUP HERE LOL
+            yield return new WaitForSeconds(10f);
+            notZen.Play();
+            yield return new WaitForSeconds(5f);
+        }
+        else if (i == 6) {
+            yield return new WaitForSeconds(5f);
+            moreSpeed.Play();
+            //ACTIVATE NEW FLOWER
+            yield return new WaitForSeconds(5f);
         }
         //yield return new WaitForSeconds(5f);
     }
@@ -143,11 +168,12 @@ public class Driver : MonoBehaviour {
                 playAudio = true;
                 waterPlants = true; StartCoroutine(distraction(1));
             }
-            
+
         }
 
         //CHANGE THE THING WE CAN PICK UP
-        else if (waterPlants) {
+        else if (waterPlants)
+        {
             //grabDriver.plant = GameObject.Find("_water_2");
             //grabDriver.plant.GetComponent<Light>().enabled = true;
             if (playAudio)
@@ -163,7 +189,7 @@ public class Driver : MonoBehaviour {
                 //flowerPerson.Play();
                 sunPlants = true; StartCoroutine(distraction(2));
             }
-           
+
         }
         else if (sunPlants)
         {
@@ -210,6 +236,23 @@ public class Driver : MonoBehaviour {
                 CoD.Play();
                 player.GetComponent<interactMode>().interactionMode = interactMode.modes.admire;
                 //next scene
+            }
+        }
+        else if (moveRock)
+        {
+            if (grabDriver.dropped)
+            {
+                fightTrex = false;
+                playAudio = true;
+                grabDriver.dropped = false;
+                moveRock = false;
+                //fightTrex = true; 
+                StartCoroutine(distraction(5));
+            }
+        }
+        else if (pickAnotherDaisy) {
+            if (grabDriver.dropped) {
+                StartCoroutine(distraction(6));
             }
         }
     }	
