@@ -238,6 +238,8 @@ public class Driver : MonoBehaviour {
             {
                 CoD.Play();
                 player.GetComponent<interactMode>().interactionMode = interactMode.modes.admire;
+                fightTrex = false;
+                moveRock = true;
                 //next scene
                 fightTrex = false;
                 moveRock = true;
