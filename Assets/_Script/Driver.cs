@@ -39,12 +39,9 @@ public class Driver : MonoBehaviour {
     private bool fightTrex = false;
     private float t = 0;
     public bool tRexDead = false;
-<<<<<<< HEAD
     public GameObject iPrompt;
-=======
     private bool moveRock = false;
     private bool pickAnotherDaisy = false;
->>>>>>> origin/master
 
 
     IEnumerator distraction(int i) {
