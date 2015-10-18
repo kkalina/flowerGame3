@@ -51,7 +51,7 @@ public class Objective1 : MonoBehaviour {
                 grabable = false;
             }
         }
-        if (grabbing) {
+        if (grabbing && plant != null) {
             plant.transform.position = Sphere_of_influence.transform.position; //+ new Vector3(-.34f, .26f, 0);
         }
 	}
