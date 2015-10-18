@@ -22,13 +22,13 @@ public class Driver : MonoBehaviour {
     public AudioSource flowerPerson;
     public AudioSource notHard;
     public AudioSource shootTrex;
-<<<<<<< HEAD
+
     public AudioSource itsComingForUs;
     public AudioSource CoD;
-=======
+
     public GUIText pickup_promt;
     public GUIText drop_promt;
->>>>>>> adcb8687e621fac99492e8ee6db959892d1f8eac
+
     public bool playAudio = true;
     private bool pickADaisy = false;
     private bool waterPlants = false;
