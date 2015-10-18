@@ -1,0 +1,205 @@
+fileFormatVersion: 2
+guid: bbd0127f06dbbd7489a3dab97efc4ecc
+timeCreated: 1445185647
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Camera
+    100004: Cube
+    100006: Empty
+    100008: High Resution
+    100010: High Resution_MeshPart0
+    100012: High Resution_MeshPart1
+    100014: High Resution_MeshPart10
+    100016: High Resution_MeshPart11
+    100018: High Resution_MeshPart12
+    100020: High Resution_MeshPart13
+    100022: High Resution_MeshPart14
+    100024: High Resution_MeshPart15
+    100026: High Resution_MeshPart16
+    100028: High Resution_MeshPart17
+    100030: High Resution_MeshPart18
+    100032: High Resution_MeshPart19
+    100034: High Resution_MeshPart2
+    100036: High Resution_MeshPart20
+    100038: High Resution_MeshPart3
+    100040: High Resution_MeshPart4
+    100042: High Resution_MeshPart5
+    100044: High Resution_MeshPart6
+    100046: High Resution_MeshPart7
+    100048: High Resution_MeshPart8
+    100050: High Resution_MeshPart9
+    100052: Sphere
+    100054: Sphere.001
+    100056: Spot
+    100058: Spot.001
+    100060: Sun
+    400000: //RootNode
+    400002: Camera
+    400004: Cube
+    400006: Empty
+    400008: High Resution
+    400010: High Resution_MeshPart0
+    400012: High Resution_MeshPart1
+    400014: High Resution_MeshPart10
+    400016: High Resution_MeshPart11
+    400018: High Resution_MeshPart12
+    400020: High Resution_MeshPart13
+    400022: High Resution_MeshPart14
+    400024: High Resution_MeshPart15
+    400026: High Resution_MeshPart16
+    400028: High Resution_MeshPart17
+    400030: High Resution_MeshPart18
+    400032: High Resution_MeshPart19
+    400034: High Resution_MeshPart2
+    400036: High Resution_MeshPart20
+    400038: High Resution_MeshPart3
+    400040: High Resution_MeshPart4
+    400042: High Resution_MeshPart5
+    400044: High Resution_MeshPart6
+    400046: High Resution_MeshPart7
+    400048: High Resution_MeshPart8
+    400050: High Resution_MeshPart9
+    400052: Sphere
+    400054: Sphere.001
+    400056: Spot
+    400058: Spot.001
+    400060: Sun
+    2300000: Cube
+    2300002: High Resution_MeshPart0
+    2300004: High Resution_MeshPart1
+    2300006: High Resution_MeshPart10
+    2300008: High Resution_MeshPart11
+    2300010: High Resution_MeshPart12
+    2300012: High Resution_MeshPart13
+    2300014: High Resution_MeshPart14
+    2300016: High Resution_MeshPart15
+    2300018: High Resution_MeshPart16
+    2300020: High Resution_MeshPart17
+    2300022: High Resution_MeshPart18
+    2300024: High Resution_MeshPart19
+    2300026: High Resution_MeshPart2
+    2300028: High Resution_MeshPart20
+    2300030: High Resution_MeshPart3
+    2300032: High Resution_MeshPart4
+    2300034: High Resution_MeshPart5
+    2300036: High Resution_MeshPart6
+    2300038: High Resution_MeshPart7
+    2300040: High Resution_MeshPart8
+    2300042: High Resution_MeshPart9
+    2300044: Sphere
+    2300046: Sphere.001
+    3300000: Cube
+    3300002: High Resution_MeshPart0
+    3300004: High Resution_MeshPart1
+    3300006: High Resution_MeshPart10
+    3300008: High Resution_MeshPart11
+    3300010: High Resution_MeshPart12
+    3300012: High Resution_MeshPart13
+    3300014: High Resution_MeshPart14
+    3300016: High Resution_MeshPart15
+    3300018: High Resution_MeshPart16
+    3300020: High Resution_MeshPart17
+    3300022: High Resution_MeshPart18
+    3300024: High Resution_MeshPart19
+    3300026: High Resution_MeshPart2
+    3300028: High Resution_MeshPart20
+    3300030: High Resution_MeshPart3
+    3300032: High Resution_MeshPart4
+    3300034: High Resution_MeshPart5
+    3300036: High Resution_MeshPart6
+    3300038: High Resution_MeshPart7
+    3300040: High Resution_MeshPart8
+    3300042: High Resution_MeshPart9
+    3300044: Sphere
+    3300046: Sphere.001
+    4300000: High Resution_MeshPart0
+    4300002: High Resution_MeshPart1
+    4300004: High Resution_MeshPart2
+    4300006: High Resution_MeshPart3
+    4300008: High Resution_MeshPart4
+    4300010: High Resution_MeshPart5
+    4300012: High Resution_MeshPart6
+    4300014: High Resution_MeshPart7
+    4300016: High Resution_MeshPart8
+    4300018: High Resution_MeshPart9
+    4300020: High Resution_MeshPart10
+    4300022: High Resution_MeshPart11
+    4300024: High Resution_MeshPart12
+    4300026: High Resution_MeshPart13
+    4300028: High Resution_MeshPart14
+    4300030: High Resution_MeshPart15
+    4300032: High Resution_MeshPart16
+    4300034: High Resution_MeshPart17
+    4300036: High Resution_MeshPart18
+    4300038: High Resution_MeshPart19
+    4300040: High Resution_MeshPart20
+    4300042: Sphere.001
+    4300044: Sphere
+    4300046: Cube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
