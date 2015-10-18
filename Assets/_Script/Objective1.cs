@@ -47,6 +47,7 @@ public class Objective1 : MonoBehaviour {
                 plant.GetComponent<Rigidbody>().velocity = Vector3.zero;
                 grabbing = false;
                 dropped = true;
+                grabable = false;
             }
         }
         if (grabbing) {

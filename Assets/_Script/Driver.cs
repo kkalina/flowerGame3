@@ -29,35 +29,50 @@ public class Driver : MonoBehaviour {
 
 
 
-    bool distraction(double i) {
-        while (t < duration) {
-            t += Time.deltaTime;
+    IEnumerator distraction(int i) {
+        //yield return new WaitForSeconds(50f);
+
+        if (i == 0) {
+            welcome.Play();
+            yield return new WaitForSeconds(12f);
+            daisy.Play();
+            yield return new WaitForSeconds(5f);
         }
         if (i == 1)
-            dandolions.Play();
-        else if (i == 2)
-            tyPlants.Play();
-        else if (i == 3)
-            poppies.Play();
-        else if (i == 4)
-            squirrels.Play();
-        else
-            multiplier = i;
-        t = 0;
-        while (t < duration) {
-            t += Time.deltaTime;
+        {
+            gj.Play();
+            yield return new WaitForSeconds(7f);
         }
-        multiplier = 1;
-        return true;
+
+        else if (i == 2)
+        {
+            flowerPerson.Play();
+            yield return new WaitForSeconds(12f);
+            tyPlants.Play();
+            yield return new WaitForSeconds(8f);
+        }
+        else if (i == 3)
+        {
+            yield return new WaitForSeconds(8f);
+            poppies.Play();
+            yield return new WaitForSeconds(8f);
+        }
+        else if (i == 4) {
+            yield return new WaitForSeconds(8f);
+            squirrels.Play();
+            yield return new WaitForSeconds(8f);
+
+        }
+        //yield return new WaitForSeconds(5f);
     }
 
     void Start() {
         grabDriver.plant = GameObject.Find("_daisy_1");
         grabDriver = sphere.GetComponent<Objective1>();
         grabDriver.plant.GetComponent<Light>().enabled = true;
-        welcome.Play();
-        pickADaisy = distraction(.5);
-        playAudio = pickADaisy;
+        //welcome.Play();
+        pickADaisy = true; //distraction(.5f);
+        //playAudio = pickADaisy;
 
     }
     //Pick a daisy
@@ -80,15 +95,15 @@ public class Driver : MonoBehaviour {
         {
             if (playAudio)
             {
-                daisy.Play();
+                StartCoroutine(distraction(0));
                 playAudio = false;
             }
             if (grabDriver.dropped)
             {
-                gj.Play();
+                //gj.Play();
                 pickADaisy = false;
                 playAudio = true;
-                waterPlants = distraction(1);
+                waterPlants = true; StartCoroutine(distraction(1));
             }
             
         }
@@ -107,8 +122,8 @@ public class Driver : MonoBehaviour {
                 waterPlants = false;
                 playAudio = true;
                 grabDriver.dropped = false;
-                flowerPerson.Play();
-                sunPlants = distraction(2);
+                //flowerPerson.Play();
+                sunPlants = true; StartCoroutine(distraction(2));
             }
            
         }
@@ -127,7 +142,7 @@ public class Driver : MonoBehaviour {
                 sunPlants = false;
                 playAudio = true;
                 grabDriver.dropped = false;
-                smellRoses = distraction(3);
+                smellRoses = true; StartCoroutine(distraction(3));
 
             }
         }
@@ -145,7 +160,7 @@ public class Driver : MonoBehaviour {
                 sunPlants = false;
                 playAudio = true;
                 grabDriver.dropped = false;
-                fightTrex = distraction(4);
+                fightTrex = true; StartCoroutine(distraction(4));
             }
         }
     }	
