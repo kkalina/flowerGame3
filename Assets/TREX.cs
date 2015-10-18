@@ -8,6 +8,8 @@ public class TREX : MonoBehaviour {
     public int health = 1000;
     public GameObject deathSplosion;
     public GameObject playerCam;
+    public GameObject gameDriver;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -27,6 +29,7 @@ Quaternion.LookRotation(target.transform.position - this.transform.position), ro
             GameObject deathSplosionInst = Instantiate(deathSplosion);
             deathSplosionInst.transform.position = this.transform.position;
             playerCam.GetComponent<shakifier>().shaking = false;
+            gameDriver.GetComponent<Driver>().tRexDead = true;
             Destroy(this.gameObject);
         }
     }

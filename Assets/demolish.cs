@@ -31,8 +31,11 @@ public class demolish : MonoBehaviour {
 
     void OnTriggerEnter(Collider coll)
     {
-        if(coll.tag == "rex")
+        if (coll.tag == "rex")
+        {
             demolishing = true;
+            this.gameObject.GetComponent<AudioSource>().Play();
+        }
     }
 
 }

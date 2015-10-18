@@ -38,7 +38,7 @@ public class Objective1 : MonoBehaviour {
             if (Input.GetMouseButtonDown(0) && !grabbing)
             {
                 plant.GetComponent<Light>().enabled = false;
-                plant.transform.FindChild("God Rays").gameObject.SetActive(false);
+                plant.transform.FindChild("GodRays").gameObject.SetActive(false);
                 //dropped = false;
                 grabbing = true;
             }

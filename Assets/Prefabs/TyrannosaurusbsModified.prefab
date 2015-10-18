@@ -296,6 +296,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 458590}
   - 65: {fileID: 6584464}
+  - 114: {fileID: 11411082}
   m_Layer: 0
   m_Name: jaws
   m_TagString: jaw
@@ -1722,7 +1723,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 122834}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.00999999978, y: .879999995, z: 8.40999985}
+  m_LocalPosition: {x: -.00999999978, y: -2.04999995, z: 8.10999966}
   m_LocalScale: {x: 1, y: 2.09867764, z: 2.05674386}
   m_Children: []
   m_Father: {fileID: 464150}
@@ -2328,11 +2329,11 @@ BoxCollider:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 122834}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.0999999, y: 3.43463016, z: 1.35000002}
+  m_Center: {x: -2.29105353e-07, y: .572314858, z: 4.6368163e-07}
 --- !u!82 &8257168
 AudioSource:
   m_ObjectHideFlags: 1
@@ -2490,6 +2491,17 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11411082
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 122834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b14257c239eefbd4b9decc52aa12a19e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11452802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2535,6 +2547,7 @@ MonoBehaviour:
   health: 150
   deathSplosion: {fileID: 100010, guid: cca49e976cfe690498d92c0ae61b8db5, type: 2}
   playerCam: {fileID: 0}
+  gameDriver: {fileID: 0}
 --- !u!135 &13500536
 SphereCollider:
   m_ObjectHideFlags: 1
