@@ -224,6 +224,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 8249956, guid: 57a3c01c17e6aae40bcb299789d756a1, type: 2}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 57a3c01c17e6aae40bcb299789d756a1, type: 2}
   m_IsPrefabParent: 0
@@ -1353,7 +1357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: .196078435, g: .196078435, b: .196078435, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2291,6 +2295,14 @@ Prefab:
       propertyPath: plant
       value: 
       objectReference: {fileID: 2038439664}
+    - target: {fileID: 11442966, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
+      propertyPath: pickup_promt
+      value: 
+      objectReference: {fileID: 953319445}
+    - target: {fileID: 11442966, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
+      propertyPath: drop_promt
+      value: 
+      objectReference: {fileID: 1375129092}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
   m_IsPrefabParent: 0
@@ -2585,7 +2597,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 470390, guid: b1eaf19d4dc15ff46a73046238454fac, type: 2}
       propertyPath: m_RootOrder
-      value: 15
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 11468896, guid: b1eaf19d4dc15ff46a73046238454fac, type: 2}
       propertyPath: sphere
