@@ -19,6 +19,8 @@ public class Driver : MonoBehaviour {
     public AudioSource flowerPerson;
     public AudioSource notHard;
     public AudioSource shootTrex;
+    public GUIText pickup_promt;
+    public GUIText drop_promt;
     public bool playAudio = true;
     private bool pickADaisy = false;
     private bool waterPlants = false;
