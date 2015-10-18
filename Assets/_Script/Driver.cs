@@ -18,6 +18,7 @@ public class Driver : MonoBehaviour {
     public AudioSource gj;
     public AudioSource flowerPerson;
     public AudioSource notHard;
+    public AudioSource shootTrex;
     public bool playAudio = true;
     private bool pickADaisy = false;
     private bool waterPlants = false;
@@ -70,9 +71,10 @@ public class Driver : MonoBehaviour {
             grabDriver.plant.GetComponent<Light>().enabled = true;
         }
         else if (i == 4) {
-            yield return new WaitForSeconds(8f);
+            yield return new WaitForSeconds(10f);
             squirrels.Play();
             yield return new WaitForSeconds(8f);
+            shootTrex.Play();
 
         }
         //yield return new WaitForSeconds(5f);
