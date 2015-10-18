@@ -25,6 +25,16 @@ public class interactMode : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            if (interactionMode == modes.admire)
+                interactionMode = modes.annihilate;
+            else
+                interactionMode = modes.admire;
+
+        }
+
 	    if((interactionMode == modes.annihilate) && (currentMode == modes.admire))
         {
             currentMode = modes.annihilate;

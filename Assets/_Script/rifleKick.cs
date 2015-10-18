@@ -28,5 +28,6 @@ public class rifleKick : MonoBehaviour {
             //    this.GetComponent<AudioSource>().Stop();
             //}
         }
+        this.transform.rotation = anchor.transform.rotation;
     }
 }
