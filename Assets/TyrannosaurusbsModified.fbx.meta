@@ -1,0 +1,248 @@
+fileFormatVersion: 2
+guid: 9396cc686603ba14e9e9b267b585d8c7
+timeCreated: 1445079492
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Bone.012
+    100004: Bone.013
+    100006: Bone.014
+    100008: Bone.024
+    100010: Bone.026
+    100012: Bone.026_end
+    100014: Bone.028
+    100016: Bone.029
+    100018: Bone.030
+    100020: Bone.031
+    100022: Bone.032
+    100024: Bone.033
+    100026: Bone.037
+    100028: Bone.038
+    100030: Bone.038_end
+    100032: Bone.039
+    100034: Bone.040
+    100036: Bone.040_end
+    100038: Bone.041
+    100040: Bone.042
+    100042: Bone.042_end
+    100044: Bone.043
+    100046: Bone.043_end
+    100048: Bone.044
+    100050: Bone.044_end
+    100052: Bone.045
+    100054: Bone.045_end
+    100056: Bone.046
+    100058: Bone.046_end
+    100060: cabeza
+    100062: cadera
+    100064: Camera
+    100066: cola 01
+    100068: cola 02
+    100070: cola 03
+    100072: cola 04
+    100074: cola 05
+    100076: COLA 06
+    100078: COLA 07
+    100080: COLA 08
+    100082: COLA 08_end
+    100084: Cube
+    100086: Cube.001
+    100088: Cube.002
+    100090: Cube.017
+    100092: cuello
+    100094: dedo 1 p izq 01
+    100096: dedo 1 p izq 01_end
+    100098: dedo 1 p izq 02
+    100100: dedo 2 p izq 02
+    100102: dedo 3 p izq 01
+    100104: dedo 3 p izq 01_end
+    100106: dedo 3 p izq 02
+    100108: espina
+    100110: femur der
+    100112: femur izq
+    100114: ik target pata der
+    100116: ik target pata der_end
+    100118: ik target pata izq
+    100120: ik target pata izq_end
+    100122: mandibubla superior
+    100124: mandibubla superior_end
+    100126: mandibula inferior
+    100128: mandibula inferior_end
+    100130: metatarso izq
+    100132: metatarzo der
+    100134: pata izq
+    100136: Sphere
+    100138: Sun
+    100140: Sun.001
+    100142: Sun.003
+    100144: Sun.004
+    100146: target cola
+    100148: target cola_end
+    100150: tibia der
+    100152: tibia izq
+    100154: //RootNode
+    400000: Armature
+    400002: Bone.012
+    400004: Bone.013
+    400006: Bone.014
+    400008: Bone.024
+    400010: Bone.026
+    400012: Bone.026_end
+    400014: Bone.028
+    400016: Bone.029
+    400018: Bone.030
+    400020: Bone.031
+    400022: Bone.032
+    400024: Bone.033
+    400026: Bone.037
+    400028: Bone.038
+    400030: Bone.038_end
+    400032: Bone.039
+    400034: Bone.040
+    400036: Bone.040_end
+    400038: Bone.041
+    400040: Bone.042
+    400042: Bone.042_end
+    400044: Bone.043
+    400046: Bone.043_end
+    400048: Bone.044
+    400050: Bone.044_end
+    400052: Bone.045
+    400054: Bone.045_end
+    400056: Bone.046
+    400058: Bone.046_end
+    400060: cabeza
+    400062: cadera
+    400064: Camera
+    400066: cola 01
+    400068: cola 02
+    400070: cola 03
+    400072: cola 04
+    400074: cola 05
+    400076: COLA 06
+    400078: COLA 07
+    400080: COLA 08
+    400082: COLA 08_end
+    400084: Cube
+    400086: Cube.001
+    400088: Cube.002
+    400090: Cube.017
+    400092: cuello
+    400094: dedo 1 p izq 01
+    400096: dedo 1 p izq 01_end
+    400098: dedo 1 p izq 02
+    400100: dedo 2 p izq 02
+    400102: dedo 3 p izq 01
+    400104: dedo 3 p izq 01_end
+    400106: dedo 3 p izq 02
+    400108: espina
+    400110: femur der
+    400112: femur izq
+    400114: ik target pata der
+    400116: ik target pata der_end
+    400118: ik target pata izq
+    400120: ik target pata izq_end
+    400122: mandibubla superior
+    400124: mandibubla superior_end
+    400126: mandibula inferior
+    400128: mandibula inferior_end
+    400130: metatarso izq
+    400132: metatarzo der
+    400134: pata izq
+    400136: Sphere
+    400138: Sun
+    400140: Sun.001
+    400142: Sun.003
+    400144: Sun.004
+    400146: target cola
+    400148: target cola_end
+    400150: tibia der
+    400152: tibia izq
+    400154: //RootNode
+    2300000: Cube.001
+    2300002: Cube.002
+    2300004: Cube.017
+    2300006: Sphere
+    3300000: Cube.001
+    3300002: Cube.002
+    3300004: Cube.017
+    3300006: Sphere
+    4300000: Sphere
+    4300002: Cube.001
+    4300004: Cube.017
+    4300006: Cube.002
+    4300008: Cube
+    7400000: Sun.001|SunAction
+    7400002: Sun.004|SunAction
+    7400004: Sun.003|SunAction
+    7400006: Armature|ArmatureAction.001
+    7400008: Armature|SunAction
+    7400010: Sun|SunAction
+    9500000: //RootNode
+    13700000: Cube
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,208 @@
+fileFormatVersion: 2
+guid: 8eedaa405d93ca143b65ed8951e94317
+timeCreated: 1445169178
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Camera
+    100002: Circle
+    100004: Cube
+    100006: Cube.001
+    100008: Cube.002
+    100010: Cube.003
+    100012: Cube.004
+    100014: Facia.001
+    100016: Facia.002
+    100018: //RootNode
+    100020: Plane.001
+    100022: Rafter
+    100024: Roof
+    100026: Roof.001
+    100028: Roof.001_MeshPart0
+    100030: Roof.001_MeshPart1
+    100032: Roof.001_MeshPart2
+    100034: Roof.001_MeshPart3
+    100036: Roof.001_MeshPart4
+    100038: Roof.001_MeshPart5
+    100040: Roof.001_MeshPart6
+    100042: Roof.001_MeshPart7
+    100044: Roof_MeshPart0
+    100046: Roof_MeshPart1
+    100048: Roof_MeshPart2
+    100050: Roof_MeshPart3
+    100052: Roof_MeshPart4
+    100054: Roof_MeshPart5
+    100056: Roof_MeshPart6
+    100058: Roof_MeshPart7
+    400000: Camera
+    400002: Circle
+    400004: Cube
+    400006: Cube.001
+    400008: Cube.002
+    400010: Cube.003
+    400012: Cube.004
+    400014: Facia.001
+    400016: Facia.002
+    400018: //RootNode
+    400020: Plane.001
+    400022: Rafter
+    400024: Roof
+    400026: Roof.001
+    400028: Roof.001_MeshPart0
+    400030: Roof.001_MeshPart1
+    400032: Roof.001_MeshPart2
+    400034: Roof.001_MeshPart3
+    400036: Roof.001_MeshPart4
+    400038: Roof.001_MeshPart5
+    400040: Roof.001_MeshPart6
+    400042: Roof.001_MeshPart7
+    400044: Roof_MeshPart0
+    400046: Roof_MeshPart1
+    400048: Roof_MeshPart2
+    400050: Roof_MeshPart3
+    400052: Roof_MeshPart4
+    400054: Roof_MeshPart5
+    400056: Roof_MeshPart6
+    400058: Roof_MeshPart7
+    2300000: Circle
+    2300002: Cube
+    2300004: Cube.001
+    2300006: Cube.002
+    2300008: Cube.003
+    2300010: Cube.004
+    2300012: Facia.001
+    2300014: Facia.002
+    2300016: Plane.001
+    2300018: Rafter
+    2300020: Roof.001_MeshPart0
+    2300022: Roof.001_MeshPart1
+    2300024: Roof.001_MeshPart2
+    2300026: Roof.001_MeshPart3
+    2300028: Roof.001_MeshPart4
+    2300030: Roof.001_MeshPart5
+    2300032: Roof.001_MeshPart6
+    2300034: Roof.001_MeshPart7
+    2300036: Roof_MeshPart0
+    2300038: Roof_MeshPart1
+    2300040: Roof_MeshPart2
+    2300042: Roof_MeshPart3
+    2300044: Roof_MeshPart4
+    2300046: Roof_MeshPart5
+    2300048: Roof_MeshPart6
+    2300050: Roof_MeshPart7
+    3300000: Circle
+    3300002: Cube
+    3300004: Cube.001
+    3300006: Cube.002
+    3300008: Cube.003
+    3300010: Cube.004
+    3300012: Facia.001
+    3300014: Facia.002
+    3300016: Plane.001
+    3300018: Rafter
+    3300020: Roof.001_MeshPart0
+    3300022: Roof.001_MeshPart1
+    3300024: Roof.001_MeshPart2
+    3300026: Roof.001_MeshPart3
+    3300028: Roof.001_MeshPart4
+    3300030: Roof.001_MeshPart5
+    3300032: Roof.001_MeshPart6
+    3300034: Roof.001_MeshPart7
+    3300036: Roof_MeshPart0
+    3300038: Roof_MeshPart1
+    3300040: Roof_MeshPart2
+    3300042: Roof_MeshPart3
+    3300044: Roof_MeshPart4
+    3300046: Roof_MeshPart5
+    3300048: Roof_MeshPart6
+    3300050: Roof_MeshPart7
+    4300000: Plane.001
+    4300002: Cube.001
+    4300004: Roof.001_MeshPart0
+    4300006: Roof.001_MeshPart1
+    4300008: Roof.001_MeshPart2
+    4300010: Roof.001_MeshPart3
+    4300012: Roof.001_MeshPart4
+    4300014: Roof.001_MeshPart5
+    4300016: Roof.001_MeshPart6
+    4300018: Roof.001_MeshPart7
+    4300020: Cube.004
+    4300022: Rafter
+    4300024: Cube.003
+    4300026: Cube.002
+    4300028: Facia.002
+    4300030: Facia.001
+    4300032: Circle
+    4300034: Roof_MeshPart0
+    4300036: Roof_MeshPart1
+    4300038: Roof_MeshPart2
+    4300040: Roof_MeshPart3
+    4300042: Roof_MeshPart4
+    4300044: Roof_MeshPart5
+    4300046: Roof_MeshPart6
+    4300048: Roof_MeshPart7
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,180 @@
+fileFormatVersion: 2
+guid: a80446f00aa73e24a9df4548fa306df6
+timeCreated: 1445169140
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Beams
+    100002: Beams_MeshPart0
+    100004: Beams_MeshPart1
+    100006: Beams_MeshPart2
+    100008: Bricks
+    100010: Camera
+    100012: camtarget
+    100014: Circle
+    100016: Cube
+    100018: Fence
+    100020: Floor
+    100022: //RootNode
+    100024: Gazebo2
+    100026: Ground
+    100028: Ground_MeshPart0
+    100030: Ground_MeshPart1
+    100032: Ground_MeshPart2
+    100034: intersector
+    100036: Lamp 1
+    100038: Lamp 2
+    100040: Lamp 3
+    100042: Light 1
+    100044: Light 2
+    100046: Light 3
+    100048: Moon
+    100050: Roof
+    100052: rotator beams
+    100054: rotator fence
+    100056: Sun
+    400000: Beams
+    400002: Beams_MeshPart0
+    400004: Beams_MeshPart1
+    400006: Beams_MeshPart2
+    400008: Bricks
+    400010: Camera
+    400012: camtarget
+    400014: Circle
+    400016: Cube
+    400018: Fence
+    400020: Floor
+    400022: //RootNode
+    400024: Gazebo2
+    400026: Ground
+    400028: Ground_MeshPart0
+    400030: Ground_MeshPart1
+    400032: Ground_MeshPart2
+    400034: intersector
+    400036: Lamp 1
+    400038: Lamp 2
+    400040: Lamp 3
+    400042: Light 1
+    400044: Light 2
+    400046: Light 3
+    400048: Moon
+    400050: Roof
+    400052: rotator beams
+    400054: rotator fence
+    400056: Sun
+    2300000: Beams_MeshPart0
+    2300002: Beams_MeshPart1
+    2300004: Beams_MeshPart2
+    2300006: Bricks
+    2300008: Circle
+    2300010: Cube
+    2300012: Fence
+    2300014: Floor
+    2300016: Gazebo2
+    2300018: Ground_MeshPart0
+    2300020: Ground_MeshPart1
+    2300022: Ground_MeshPart2
+    2300024: intersector
+    2300026: Lamp 1
+    2300028: Lamp 2
+    2300030: Lamp 3
+    2300032: Roof
+    3300000: Beams_MeshPart0
+    3300002: Beams_MeshPart1
+    3300004: Beams_MeshPart2
+    3300006: Bricks
+    3300008: Circle
+    3300010: Cube
+    3300012: Fence
+    3300014: Floor
+    3300016: Gazebo2
+    3300018: Ground_MeshPart0
+    3300020: Ground_MeshPart1
+    3300022: Ground_MeshPart2
+    3300024: intersector
+    3300026: Lamp 1
+    3300028: Lamp 2
+    3300030: Lamp 3
+    3300032: Roof
+    4300000: Lamp 3
+    4300002: Gazebo2
+    4300004: Cube
+    4300006: Lamp 2
+    4300008: Lamp 1
+    4300010: intersector
+    4300012: Floor
+    4300014: Roof
+    4300016: Fence
+    4300018: Beams_MeshPart0
+    4300020: Beams_MeshPart1
+    4300022: Beams_MeshPart2
+    4300024: Circle
+    4300026: Ground_MeshPart0
+    4300028: Ground_MeshPart1
+    4300030: Ground_MeshPart2
+    4300032: Bricks
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

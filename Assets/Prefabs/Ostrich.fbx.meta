@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: e1de446f49e47cf44b4f897f91c97865
+timeCreated: 1445147973
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Armature
+    100002: butt
+    100004: calf.l
+    100006: calf.r
+    100008: Circle
+    100010: foot.l
+    100012: foot.r
+    100014: footIK.l
+    100016: footIK.l_end
+    100018: footIK.r
+    100020: footIK.r_end
+    100022: head
+    100024: head.001
+    100026: head.002
+    100028: head.002_end
+    100030: headIK
+    100032: headIK_end
+    100034: legPole.l
+    100036: legPole.l_end
+    100038: legPole.r
+    100040: legPole.r_end
+    100042: main
+    100044: metatarsel.l
+    100046: metatarsel.r
+    100048: neck
+    100050: neck.001
+    100052: neck.002
+    100054: neck.003
+    100056: neck.004
+    100058: neck.005
+    100060: neck.006
+    100062: neckPole
+    100064: neckPole_end
+    100066: //RootNode
+    100068: shoulder.l
+    100070: shoulder.r
+    100072: skeleton
+    100074: skeleton.001
+    100076: skeleton.002
+    100078: skeleton.003
+    100080: tail
+    100082: tail.001
+    100084: tail.001_end
+    100086: thigh.l
+    100088: thigh.r
+    100090: toes.l
+    100092: toes.l_end
+    100094: toes.r
+    100096: toes.r_end
+    400000: Armature
+    400002: butt
+    400004: calf.l
+    400006: calf.r
+    400008: Circle
+    400010: foot.l
+    400012: foot.r
+    400014: footIK.l
+    400016: footIK.l_end
+    400018: footIK.r
+    400020: footIK.r_end
+    400022: head
+    400024: head.001
+    400026: head.002
+    400028: head.002_end
+    400030: headIK
+    400032: headIK_end
+    400034: legPole.l
+    400036: legPole.l_end
+    400038: legPole.r
+    400040: legPole.r_end
+    400042: main
+    400044: metatarsel.l
+    400046: metatarsel.r
+    400048: neck
+    400050: neck.001
+    400052: neck.002
+    400054: neck.003
+    400056: neck.004
+    400058: neck.005
+    400060: neck.006
+    400062: neckPole
+    400064: neckPole_end
+    400066: //RootNode
+    400068: shoulder.l
+    400070: shoulder.r
+    400072: skeleton
+    400074: skeleton.001
+    400076: skeleton.002
+    400078: skeleton.003
+    400080: tail
+    400082: tail.001
+    400084: tail.001_end
+    400086: thigh.l
+    400088: thigh.r
+    400090: toes.l
+    400092: toes.l_end
+    400094: toes.r
+    400096: toes.r_end
+    4300000: Circle
+    9500000: //RootNode
+    13700000: Circle
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
