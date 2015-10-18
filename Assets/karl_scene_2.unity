@@ -6204,6 +6204,10 @@ Prefab:
       propertyPath: deathSplosion
       value: 
       objectReference: {fileID: 100010, guid: cca49e976cfe690498d92c0ae61b8db5, type: 2}
+    - target: {fileID: 11485714, guid: 5a771b37da0cfc1438394f3fcdce1496, type: 2}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1843596080}
     m_RemovedComponents:
     - {fileID: 6443500, guid: 5a771b37da0cfc1438394f3fcdce1496, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5a771b37da0cfc1438394f3fcdce1496, type: 2}
