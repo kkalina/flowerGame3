@@ -14,6 +14,7 @@ public class Objective1 : MonoBehaviour {
     public Canvas drop_promt;
 
     public GameObject leftClickPrompt;
+    //public GameObject iPrompt;
     // Use this for initialization
     void Start () 
 	{
@@ -24,6 +25,7 @@ public class Objective1 : MonoBehaviour {
 		if (other.gameObject == plant) //Current Target
 		{
 			grabable = true;
+            leftClickPrompt.GetComponent<SpriteRenderer>().enabled = true;
 			
 		}
 	}
@@ -34,7 +36,6 @@ public class Objective1 : MonoBehaviour {
         else if (other.gameObject == plant && grabbing) {
             pickup_promt.enabled = false;
             drop_promt.enabled = true;
-            leftClickPrompt.GetComponent<SpriteRenderer>().enabled = true;
         }
     }
 
@@ -43,6 +44,8 @@ public class Objective1 : MonoBehaviour {
 		if (other.gameObject == plant) //Current Target
 		{
 			grabable = false;
+
+            leftClickPrompt.GetComponent<SpriteRenderer>().enabled = false;
 		}
 	}
 	// Update is called once per frame
@@ -58,6 +61,8 @@ public class Objective1 : MonoBehaviour {
                 grabbing = true;
             }
             else if (Input.GetMouseButtonDown(0)) {
+
+                leftClickPrompt.GetComponent<SpriteRenderer>().enabled = false;
                 Destroy(plant, 4f);
                 //plant.GetComponent<Collider>().enabled = false;
                 plant.GetComponent<Rigidbody>().velocity = Vector3.zero;
@@ -69,8 +74,6 @@ public class Objective1 : MonoBehaviour {
         else {
             drop_promt.enabled = false;
             pickup_promt.enabled = false;
-
-            leftClickPrompt.GetComponent<SpriteRenderer>().enabled = false;
         }
         if (grabbing && plant != null) {
             plant.transform.position = Sphere_of_influence.transform.position; //+ new Vector3(-.34f, .26f, 0);

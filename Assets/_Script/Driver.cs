@@ -23,6 +23,10 @@ public class Driver : MonoBehaviour {
     public AudioSource flowerPerson;
     public AudioSource notHard;
     public AudioSource shootTrex;
+    public AudioSource audMoveRock;
+    public AudioSource notZen;
+    public AudioSource moreSpeed;
+    public AudioSource audPickAnotherDaisy;
 
     public AudioSource itsComingForUs;
     public AudioSource CoD;
@@ -36,6 +40,9 @@ public class Driver : MonoBehaviour {
     private bool fightTrex = false;
     private float t = 0;
     public bool tRexDead = false;
+    public GameObject iPrompt;
+    private bool moveRock = false;
+    private bool pickAnotherDaisy = false;
 
     //load level after one sceond delay
     IEnumerator LevelLoad(string name) {
@@ -88,7 +95,8 @@ public class Driver : MonoBehaviour {
 
             grabDriver.plant.transform.FindChild("GodRays").gameObject.SetActive(true);
         }
-        else if (i == 4) {
+        else if (i == 4)
+        {
             yield return new WaitForSeconds(10f);
             squirrels.Play();
             yield return new WaitForSeconds(8f);
@@ -96,11 +104,33 @@ public class Driver : MonoBehaviour {
             tRex.SetActive(true);
             fightTrex = true;
             yield return new WaitForSeconds(3f);
+            iPrompt.SetActive(true);
             shootTrex.Play();
             player.GetComponent<interactMode>().safety = false;
             yield return new WaitForSeconds(10f);
             itsComingForUs.Play();
 
+        }
+        else if (i == 5)
+        {
+            yield return new WaitForSeconds(10f);
+            audMoveRock.Play();
+            //ACTIVATE ROCK PICKUP HERE LOL
+            grabDriver.plant = GameObject.Find("_Stone_1");
+            grabDriver.plant.GetComponent<Light>().enabled = true;
+            grabDriver.plant.transform.FindChild("GodRays").gameObject.SetActive(true);
+            yield return new WaitForSeconds(10f);
+            
+        }
+        else if (i == 6) {
+            notZen.Play();
+            yield return new WaitForSeconds(5f);
+            moreSpeed.Play();
+            //ACTIVATE NEW FLOWER
+            grabDriver.plant = GameObject.Find("_daisy_2");
+            grabDriver.plant.GetComponent<Light>().enabled = true;
+            grabDriver.plant.transform.FindChild("GodRays").gameObject.SetActive(true);
+            yield return new WaitForSeconds(5f);
         }
         //yield return new WaitForSeconds(5f);
     }
@@ -145,7 +175,8 @@ public class Driver : MonoBehaviour {
         }
 
         //CHANGE THE THING WE CAN PICK UP
-        else if (waterPlants) {
+        else if (waterPlants)
+        {
             //grabDriver.plant = GameObject.Find("_water_2");
             //grabDriver.plant.GetComponent<Light>().enabled = true;
             if (playAudio) {
@@ -197,7 +228,27 @@ public class Driver : MonoBehaviour {
             if (tRexDead) {
                 CoD.Play();
                 player.GetComponent<interactMode>().interactionMode = interactMode.modes.admire;
+                fightTrex = false;
+                moveRock = true;
                 //next scene
+                fightTrex = false;
+                moveRock = true;
+            }
+        }
+        else if (moveRock)
+        {
+            if (grabDriver.dropped)
+            {
+                playAudio = true;
+                grabDriver.dropped = false;
+                moveRock = false;
+                //fightTrex = true; 
+                StartCoroutine(distraction(5));
+            }
+        }
+        else if (pickAnotherDaisy) {
+            if (grabDriver.dropped) {
+                StartCoroutine(distraction(6));
             }
         }
 
