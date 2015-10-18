@@ -6,6 +6,7 @@ public class TREX : MonoBehaviour {
     public float rotationSpeed = 1f;
     public GameObject target;
     public int health = 1000;
+    public GameObject deathSplosion;
 	// Use this for initialization
 	void Start () {
 	
@@ -19,6 +20,12 @@ public class TREX : MonoBehaviour {
 Quaternion.LookRotation(target.transform.position - this.transform.position), rotationSpeed * Time.deltaTime);
         Vector3 movement = new Vector3(this.transform.forward.x, 0f, this.transform.forward.z);
         this.transform.position += movement * speed * Time.deltaTime;
+
+        if(health <= 0)
+        {
+            GameObject deathSplosionInst = Instantiate(deathSplosion);
+            Destroy(this.gameObject);
+        }
     }
     /*
     void onCollisionEnter(Collision coll)
