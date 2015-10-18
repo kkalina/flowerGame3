@@ -33,29 +33,41 @@ public class Driver : MonoBehaviour {
         //yield return new WaitForSeconds(50f);
 
         if (i == 0) {
+            yield return new WaitForSeconds(5f);
             welcome.Play();
-            yield return new WaitForSeconds(12f);
+            yield return new WaitForSeconds(8f);
             daisy.Play();
             yield return new WaitForSeconds(5f);
         }
         if (i == 1)
         {
+            yield return new WaitForSeconds(1f);
             gj.Play();
-            yield return new WaitForSeconds(7f);
+            yield return new WaitForSeconds(8f);
+            water.Play();
+            grabDriver.plant = GameObject.Find("_water_2");
+            grabDriver.plant.GetComponent<Light>().enabled = true;
         }
 
         else if (i == 2)
         {
+            yield return new WaitForSeconds(1f);
             flowerPerson.Play();
             yield return new WaitForSeconds(12f);
             tyPlants.Play();
-            yield return new WaitForSeconds(8f);
+            yield return new WaitForSeconds(10f);
+            move.Play();
+            grabDriver.plant = GameObject.Find("_move_3");
+            grabDriver.plant.GetComponent<Light>().enabled = true;
         }
         else if (i == 3)
         {
             yield return new WaitForSeconds(8f);
             poppies.Play();
-            yield return new WaitForSeconds(8f);
+            yield return new WaitForSeconds(12f);
+            smell.Play();
+            grabDriver.plant = GameObject.Find("_smell_4");
+            grabDriver.plant.GetComponent<Light>().enabled = true;
         }
         else if (i == 4) {
             yield return new WaitForSeconds(8f);
@@ -110,11 +122,11 @@ public class Driver : MonoBehaviour {
 
         //CHANGE THE THING WE CAN PICK UP
         else if (waterPlants) {
-            grabDriver.plant = GameObject.Find("_water_2");
-            grabDriver.plant.GetComponent<Light>().enabled = true;
+            //grabDriver.plant = GameObject.Find("_water_2");
+            //grabDriver.plant.GetComponent<Light>().enabled = true;
             if (playAudio)
             {
-                water.Play();
+                //water.Play();
                 playAudio = false;
             }
             if (grabDriver.dropped)
@@ -129,13 +141,13 @@ public class Driver : MonoBehaviour {
         }
         else if (sunPlants)
         {
-            grabDriver.plant = GameObject.Find("_move_3");
-            grabDriver.plant.GetComponent<Light>().enabled = true;
+            //grabDriver.plant = GameObject.Find("_move_3");
+            //grabDriver.plant.GetComponent<Light>().enabled = true;
             if (playAudio)
             {
-                move.Play();
+                //move.Play();
                 playAudio = false;
-                notHard.Play();
+                //notHard.Play();
             }
             if (grabDriver.dropped)
             {
@@ -148,11 +160,11 @@ public class Driver : MonoBehaviour {
         }
         else if (smellRoses)
         {
-            grabDriver.plant = GameObject.Find("_smell_4");
-            grabDriver.plant.GetComponent<Light>().enabled = true;
+            //grabDriver.plant = GameObject.Find("_smell_4");
+            //grabDriver.plant.GetComponent<Light>().enabled = true;
             if (playAudio)
             {
-                smell.Play();
+                //smell.Play();
                 playAudio = false;
             }
             if (grabDriver.dropped)
