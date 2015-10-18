@@ -11,6 +11,9 @@ public class interactMode : MonoBehaviour {
     public GameObject gunObj3;
     public GameObject gunObj4;
 
+    public GameObject handObj1;
+    public GameObject handObj2;
+
     private float armTime = 9999999f;
     public float armDelay = 3f;
     public bool arming = false;
@@ -40,6 +43,7 @@ public class interactMode : MonoBehaviour {
             currentMode = modes.annihilate;
             armTime = Time.time;
             gunObj1.SetActive(true);
+            handObj1.SetActive(false);
             gunObj1.GetComponent<Animator>().SetBool("gunMode", true);
             arming = true;
         }
@@ -50,6 +54,8 @@ public class interactMode : MonoBehaviour {
             gunObj2.SetActive(false);
             gunObj3.SetActive(false);
             gunObj4.SetActive(false);
+            handObj1.SetActive(true);
+            handObj2.SetActive(true);
             print("DISARMING");
             gunObj1.GetComponent<Animator>().enabled = true;
             gunObj1.GetComponent<Animator>().SetBool("gunMode", false);
@@ -62,6 +68,7 @@ public class interactMode : MonoBehaviour {
             gunObj2.SetActive(true);
             gunObj3.SetActive(true);
             gunObj4.SetActive(true);
+            handObj2.SetActive(false);
             arming = false;
         }
 	}
