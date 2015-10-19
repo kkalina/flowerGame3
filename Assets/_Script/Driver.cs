@@ -230,9 +230,8 @@ public class Driver : MonoBehaviour {
                 player.GetComponent<interactMode>().interactionMode = interactMode.modes.admire;
                 fightTrex = false;
                 moveRock = true;
+                grabDriver.dropped = true;
                 //next scene
-                fightTrex = false;
-                moveRock = true;
             }
         }
         else if (moveRock)
