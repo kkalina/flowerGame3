@@ -2021,6 +2021,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 975544c7f0aa2fa488bac6f7cb72bfb2, type: 2}
+    - target: {fileID: 11442966, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
+      propertyPath: leftClickPrompt
+      value: 
+      objectReference: {fileID: 184160, guid: 96d90b8d63822bf47a62fd034a9a9281, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
   m_IsPrefabParent: 0
@@ -4469,10 +4473,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c91c1eb85782d5748ace27eb4d7415bb, type: 3}
   m_IsPrefabParent: 0
---- !u!1 &397257972 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 154068, guid: 6b405aeb8e820ef48a5c75c31581d5b0, type: 2}
-  m_PrefabInternal: {fileID: 188210078}
 --- !u!4 &397669841 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: c91c1eb85782d5748ace27eb4d7415bb, type: 3}
@@ -19070,7 +19070,7 @@ Prefab:
     - target: {fileID: 11468896, guid: b1eaf19d4dc15ff46a73046238454fac, type: 2}
       propertyPath: iPrompt
       value: 
-      objectReference: {fileID: 397257972}
+      objectReference: {fileID: 0}
     - target: {fileID: 8207570, guid: b1eaf19d4dc15ff46a73046238454fac, type: 2}
       propertyPath: m_PlayOnAwake
       value: 0
