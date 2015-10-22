@@ -10,6 +10,8 @@ public class interactMode : MonoBehaviour {
     public GameObject gunObj2;
     public GameObject gunObj3;
     public GameObject gunObj4;
+    public GameObject gunObj5;
+    public GameObject gun;
 
     public GameObject iPrompt;
 
@@ -33,7 +35,21 @@ public class interactMode : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if (Input.GetKeyDown(KeyCode.T) && !safety)
+        if(gun.GetComponent<Animator>().GetBool("gunMode") && Input.GetMouseButtonDown(1))
+        {
+
+            gun.GetComponent<Animator>().SetBool("ADS", true);
+            gun.GetComponent<Animator>().GetBool("gunMode");
+
+        }
+        if (Input.GetMouseButtonUp(1))
+        {
+
+            gun.GetComponent<Animator>().SetBool("ADS", false);
+
+        }
+
+        if ((Input.GetKeyDown(KeyCode.T) && !safety) || (Input.GetKeyDown(KeyCode.I)))
         {
             if (interactionMode == modes.admire)
                 interactionMode = modes.annihilate;
@@ -50,7 +66,7 @@ public class interactMode : MonoBehaviour {
             armTime = Time.time;
             gunObj1.SetActive(true);
             handObj1.SetActive(false);
-            gunObj1.GetComponent<Animator>().SetBool("gunMode", true);
+            gun.GetComponent<Animator>().SetBool("gunMode", true);
             arming = true;
         }
         if ((interactionMode == modes.admire) && (currentMode == modes.annihilate))
@@ -60,20 +76,24 @@ public class interactMode : MonoBehaviour {
             gunObj2.SetActive(false);
             gunObj3.SetActive(false);
             gunObj4.SetActive(false);
+            gunObj5.SetActive(false);
             handObj1.SetActive(true);
             handObj2.SetActive(true);
             print("DISARMING");
-            gunObj1.GetComponent<Animator>().enabled = true;
-            gunObj1.GetComponent<Animator>().SetBool("gunMode", false);
+            gunObj1.GetComponent<rifleKick>().enabled = false;
+            //gunObj1.GetComponent<Animator>().enabled = true;
+            gun.GetComponent<Animator>().SetBool("gunMode", false);
             //gunObj1.SetActive(true);
         }
         if((Time.time > (armTime + armDelay)) && (currentMode == modes.annihilate))
         {
 
-            gunObj1.GetComponent<Animator>().enabled = false;
+            //gunObj1.GetComponent<Animator>().enabled = false;
+            gunObj1.GetComponent<rifleKick>().enabled = true;
             gunObj2.SetActive(true);
             gunObj3.SetActive(true);
             gunObj4.SetActive(true);
+            gunObj5.SetActive(true);
             handObj2.SetActive(false);
             arming = false;
         }
