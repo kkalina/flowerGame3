@@ -10,8 +10,8 @@ public class Objective1 : MonoBehaviour {
     public bool grabbing = false;
     public bool dropped = false;
 
-    public Canvas pickup_promt;
-    public Canvas drop_promt;
+    //public Canvas pickup_promt;
+    //public Canvas drop_promt;
 
     public GameObject leftClickPrompt;
     //public GameObject iPrompt;
@@ -31,11 +31,11 @@ public class Objective1 : MonoBehaviour {
 	}
     void OnTriggerStay(Collider other) {
         if (other.gameObject == plant && !grabbing) {
-            pickup_promt.enabled = true;
+            //pickup_promt.enabled = true;
         }
         else if (other.gameObject == plant && grabbing) {
-            pickup_promt.enabled = false;
-            drop_promt.enabled = true;
+            //pickup_promt.enabled = false;
+            //drop_promt.enabled = true;
         }
     }
 
@@ -72,8 +72,8 @@ public class Objective1 : MonoBehaviour {
             }
         }
         else {
-            drop_promt.enabled = false;
-            pickup_promt.enabled = false;
+            //drop_promt.enabled = false;
+            //pickup_promt.enabled = false;
             leftClickPrompt.GetComponent<SpriteRenderer>().enabled = false;
         }
         if (grabbing && plant != null) {
