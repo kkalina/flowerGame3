@@ -14460,6 +14460,10 @@ Prefab:
       propertyPath: tRex
       value: 
       objectReference: {fileID: 2082933537}
+    - target: {fileID: 11489990, guid: 959943f6c7461314fa41c7c9a50ba413, type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 959943f6c7461314fa41c7c9a50ba413, type: 2}
   m_IsPrefabParent: 0
@@ -20006,6 +20010,25 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: c91c1eb85782d5748ace27eb4d7415bb, type: 3}
   m_PrefabInternal: {fileID: 1835341305}
+--- !u!1 &1892122305 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 158268, guid: 959943f6c7461314fa41c7c9a50ba413, type: 2}
+  m_PrefabInternal: {fileID: 1381753984}
+--- !u!114 &1892122311
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1892122305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f910bcc4740bc6f44b1b8d2f8f00b839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet: {fileID: 129536, guid: 3d5cec079bd70dc4a874ed91c21b418b, type: 2}
+  bulletSoundObj: {fileID: 133316, guid: f1aa9e88a1407d14d98836452d4e9ed1, type: 2}
+  tRex: {fileID: 2082933537}
+  frequency: .100000001
 --- !u!4 &1896115250 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: c91c1eb85782d5748ace27eb4d7415bb, type: 3}
