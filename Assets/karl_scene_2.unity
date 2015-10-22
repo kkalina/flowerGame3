@@ -9946,6 +9946,10 @@ Prefab:
       propertyPath: health
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 11470000, guid: 5a771b37da0cfc1438394f3fcdce1496, type: 2}
+      propertyPath: SPM
+      value: 51.7999992
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5a771b37da0cfc1438394f3fcdce1496, type: 2}
   m_IsPrefabParent: 0

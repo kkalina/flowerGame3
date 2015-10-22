@@ -8,8 +8,9 @@ public class rexFootsteps : MonoBehaviour {
     private float timeOfFirstStep = 0f;
     int i = 1;
     public GameObject playerCam;
-    public float shakeStartDelay = 0.05f;
-    public float shakeDuration = 0.2f;
+    public float shakeStartDelay = 0.12f;
+    public float shakeDuration = 0.4f;
+    private bool step = false;
 
 	// Use this for initialization
 	void Start () {
@@ -23,17 +24,21 @@ public class rexFootsteps : MonoBehaviour {
         {
             i = i + 1;
             this.gameObject.GetComponent<AudioSource>().Play();
+            step = true;
         }
 
 
-        if ((i>1) && (Time.time > (timeOfFirstStep + (secondsPerStep * (i - 1)) + shakeStartDelay)))
+        if ((i>1) && (Time.time > (timeOfFirstStep + (secondsPerStep * (i - 1)) + shakeStartDelay)) && step)
         {
-            playerCam.GetComponent<shakifier>().shaking = true;
+            //playerCam.GetComponent<shakifier>().shaking = true;
+            playerCam.GetComponent<shakifier>().shakeTime += shakeDuration;
+            step = false;
         }
-
+        /*
         if (Time.time > (timeOfFirstStep + (secondsPerStep * (i-1)) + shakeDuration))
         {
             playerCam.GetComponent<shakifier>().shaking = false;
         }
+        */
     }
 }

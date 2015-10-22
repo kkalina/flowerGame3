@@ -28,7 +28,7 @@ Quaternion.LookRotation(target.transform.position - this.transform.position), ro
         {
             GameObject deathSplosionInst = Instantiate(deathSplosion);
             deathSplosionInst.transform.position = this.transform.position;
-            playerCam.GetComponent<shakifier>().shaking = false;
+            //playerCam.GetComponent<shakifier>().shaking = false;
             gameDriver.GetComponent<Driver>().tRexDead = true;
             Destroy(this.gameObject);
         }
