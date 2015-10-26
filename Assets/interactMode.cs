@@ -18,6 +18,8 @@ public class interactMode : MonoBehaviour {
     public GameObject handObj1;
     public GameObject handObj2;
 
+    public bool cheatMode;
+
     private float armTime = 9999999f;
     public float armDelay = 3f;
     public bool arming = false;
@@ -49,7 +51,7 @@ public class interactMode : MonoBehaviour {
 
         }
 
-        if ((Input.GetKeyDown(KeyCode.T) && !safety) || (Input.GetKeyDown(KeyCode.I)))
+        if ((Input.GetKeyDown(KeyCode.T) && !safety) || ((Input.GetKeyDown(KeyCode.I) && cheatMode)))
         {
             if (interactionMode == modes.admire)
                 interactionMode = modes.annihilate;

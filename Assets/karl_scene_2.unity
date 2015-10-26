@@ -9817,6 +9817,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114892, guid: 2ae218ee93154a34f86666b2f413a6e5, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ae218ee93154a34f86666b2f413a6e5, type: 2}
   m_IsPrefabParent: 0
@@ -14506,6 +14510,10 @@ Prefab:
       propertyPath: tRex
       value: 
       objectReference: {fileID: 2082933537}
+    - target: {fileID: 11461388, guid: 959943f6c7461314fa41c7c9a50ba413, type: 2}
+      propertyPath: cheatMode
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 959943f6c7461314fa41c7c9a50ba413, type: 2}
   m_IsPrefabParent: 0
